@@ -28,10 +28,12 @@ class App extends React.Component {
     let loginForm;
 
     if(this.state.signningUp) {
+      loginForm = null;
       signUpForm = <SignUp/>;
     }
 
     if(this.state.loggingIn) {
+      signUpForm = null;
       loginForm = <Login/>;
     }
 
